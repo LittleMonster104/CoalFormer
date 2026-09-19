@@ -1,0 +1,37 @@
+% Code and Data Availability Section for ICLR Paper
+
+\section{Code and Data Availability}
+\label{app:code}
+
+\textbf{Code Repository:} Our complete implementation is available at:
+
+\begin{center}
+\url{https://github.com/[ANONYMIZED]/coalformer}
+\end{center}
+
+The repository includes:
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+    \item \textbf{Core Implementation:} Complete PyTorch implementation of CoalFormer with learnable prototype clustering, coalition-aware value decomposition, and two-phase regularization (Section~\ref{sec:method})
+    \item \textbf{Training Scripts:} SMAC 3m training with multiple random seeds, supporting both single-seed runs and batch experiments
+    \item \textbf{Baseline Methods:} Implementations of VDN, QMIX, and BRIDGE for fair comparison
+    \item \textbf{Ablation Studies:} Scripts to reproduce all ablation experiments in Table~\ref{tab:ablation}
+    \item \textbf{Visualization Tools:} Coalition structure visualization (Figure~\ref{fig:coalition_structure}), t-SNE embeddings, and all paper figures
+    \item \textbf{Documentation:} Detailed installation guide, hyperparameter configurations, and usage examples
+\end{itemize}
+
+\textbf{Pre-trained Models:} Upon acceptance, we will release model checkpoints for all reported results, including:
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+    \item CoalFormer trained on SMAC 3m (all 4 seeds)
+    \item Baseline models (VDN, QMIX, BRIDGE) for reproduction
+    \item Ablation study checkpoints
+\end{itemize}
+
+\textbf{Experimental Data:} Training logs, evaluation metrics (TensorBoard format), and raw experimental data will be made available alongside the code.
+
+\textbf{Reproducibility:} All experiments use fixed random seeds (42, 43, 44, 45) and are fully reproducible following the provided instructions. Expected training time on a single NVIDIA RTX 3090 is approximately 45 minutes per seed for SMAC 3m (1000 episodes).
+
+% Alternative version for anonymous submission:
+% For anonymous review, code is available at:
+% \url{https://anonymous.4open.science/r/coalformer-XXXX/}
+% 
+% Complete code, pre-trained models, and data will be publicly released upon acceptance.
